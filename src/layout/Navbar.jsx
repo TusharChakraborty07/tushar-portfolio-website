@@ -34,7 +34,7 @@ const Navbar = () => {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-[var(--color-primary)] transition"
         >
-          PM<span>.</span>
+          TC<span>.</span>
         </a>
 
         {/* Desktop Nav */}
