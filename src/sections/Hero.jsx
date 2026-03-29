@@ -1,8 +1,8 @@
 import React from "react";
 import Button from "@/components/Button";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
-import { ArrowRight } from "lucide-react";
-import { Download } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -76,6 +76,33 @@ const Hero = () => {
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+              <span className="text-sm text-muted-foreground">Follow me: </span>
+              {[
+                {
+                  icon: FaGithub,
+                  href: "https://github.com/TusharChakraborty07/",
+                },
+                {
+                  icon: FaLinkedin,
+                  href: "https://www.linkedin.com/in/tushar-chakraborty-9a603122b/",
+                },
+                // {
+                //   icon: Github,
+                //   href: "https://github.com/TusharChakraborty07/",
+                // },
+              ].map((social, idx) => (
+                <a
+                  id={social.idx}
+                  href={social.href}
+                  className="p-2 glass rounded-full hover:bg-primary/10 hover:text-primary transition-all duration-300"
+                >
+                  {<social.icon className="w-5 h-5" />}
+                </a>
+              ))}
             </div>
           </div>
 
