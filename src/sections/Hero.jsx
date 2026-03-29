@@ -71,7 +71,7 @@ const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse " />
-                Software Engineer . React Specialist
+                Software Engineer | Full Stack Developer (MERN & C#/.NET)
               </span>
             </div>
             {/* Headline */}
