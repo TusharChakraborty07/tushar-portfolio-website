@@ -1,4 +1,8 @@
 import React from "react";
+import Button from "@/components/Button";
+import AnimatedBorderButton from "../components/AnimatedBorderButton";
+import { ArrowRight } from "lucide-react";
+import { Download } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -31,6 +35,52 @@ const Hero = () => {
             }}
           />
         ))}
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Coloumn - text content */}
+          <div className="space-y-8">
+            <div className="animate-fade-in">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
+                <span className="w-2 h-2 bg-primary rounded-full animate-pulse " />
+                Software Engineer . React Specialist
+              </span>
+            </div>
+            {/* Headline */}
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
+                Crafting <span className="text-primary glow-text">digital</span>
+                <br />
+                <span className="font-serif italic font-normal text-white">
+                  precision
+                </span>
+              </h1>
+
+              {/* Small Intro */}
+              <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-800">
+                Hi, I'm Tushar Chakraborty — a software engineer specializing in
+                React, Preact, .NET, MERN, and MongoDB. I build scalable,
+                high-performance web applications that deliver seamless and
+                engaging user experiences.
+              </p>
+            </div>
+
+            {/* CTAs */}
+            <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
+              <Button size="lg">
+                Contact Me <ArrowRight className="w-5 h-5" />
+              </Button>
+              <AnimatedBorderButton>
+                <Download className="w-5 h-5" />
+                Download CV
+              </AnimatedBorderButton>
+            </div>
+          </div>
+
+          {/* Right Coloumn - profile image */}
+        </div>
       </div>
     </section>
   );
