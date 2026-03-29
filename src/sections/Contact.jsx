@@ -243,8 +243,7 @@ const Contact = () => {
               </div>
               <p className="text-muted-foreground text-sm">
                 I'm currently open to new opportunities and exciting projects.
-                Whether you need a full-time engineer or a freelance consultant,
-                let's talk!
+                Whether you need a full-time engineer, let's talk!
               </p>
             </div>
           </div>

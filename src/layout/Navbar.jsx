@@ -34,7 +34,12 @@ const Navbar = () => {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-[var(--color-primary)] transition"
         >
-          TC<span>.</span>
+          {/* TC<span>.</span> */}
+          <img
+            src="/NavLogo.png"
+            alt="TC Logo"
+            className="h-8 md:h-10 lg:h-12 w-auto rounded-full object-contain"
+          />
         </a>
 
         {/* Desktop Nav */}
